@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './MyComponents/Header';
+import Surveyitem from './MyComponents/Surveyitem';
 function App() {
   let data = [
 		{
@@ -27,7 +27,7 @@ function App() {
     <div>
       {
       data.map((item)=>{
-      return (<Header key = {item.id} question = {item.question} answer_type = {item.answer_type} question_id = {item.id}/> )  
+      return (<Surveyitem key = {item.id} question = {item.question} answer_type = {item.answer_type} question_id = {item.id}/> )  
       })
       }
     </div>
