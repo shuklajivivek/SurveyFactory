@@ -6,8 +6,8 @@ import Question from "./Question";
 function Header(props) {  
   return (
     <Container>
-      <Question question_id={props.question_id} question={props.question}/>
-      <Answertype answer_type = {props.answer_type}/>
+      <Question question_id={props.key} question={props.questionData.email}/>
+      <Answertype answer_type = 'text'/>
     </Container>
   );
 }
